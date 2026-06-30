@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "My Mother is a Showgirl"
+  site-url: "https://georginahare.github.io/my-mother-is-a-showgirl"
+  search: false
+  navbar:
+    title: false
+    background: white
+    foreground: black
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Artist Statement"
+        href: artist-statement.qmd
+      - text: "Gallery"
+        href: gallery.qmd
+      - text: "Video"
+        href: video.qmd
+      - text: "Exhibition Live Events"
+        menu:
+        - text: "Sydney"
+          href: sydney.qmd
+        - text: "London"
+          href: london.qmd
+    right:
+      - href: https://www.georginahare.co.uk/
+        text: "Georgie Hare"
+      - text: "Contact"
+        href: contact.qmd
+
+format:
+  html:
+    theme:
+      - styles.scss
+    toc: false
+    page-layout: full
+    smooth-scroll: true
+    link-external-newwindow: false
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Fascinate+Inline&family=Figtree:ital,wght@0,300..900;1,300..900&family=Major+Mono+Display&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
